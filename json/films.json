@@ -1,0 +1,25 @@
+{
+    "films": [
+        {
+            "id": "01",
+            "titulo": "Terminator",
+            "duracion": "2h",
+            "director": "James Cameron",
+            "genero": "Drama"
+        },
+        {
+            "id": "02",
+            "titulo": "Alien",
+            "duracion": "2h 30 min",
+            "director": "Ridley Scott",
+            "genero": "Sci-Fi"
+        },
+        {
+            "id": "03",
+            "titulo": "Matrix",
+            "duracion": "2h 16 min",
+            "director": "James Cameron",
+            "genero": "Action"
+        }
+    ]
+}
