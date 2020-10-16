@@ -1,7 +1,28 @@
-.body {
-    background-color: f2f2f0;
+#body_color {
+    background-color: #f2f2f0;
 }
 
-·section {
-    background-color: e9ecee;
+#section_color {
+    background-color: #e9ecee;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+#title_section {
+    font-family: 'Chilanka', cursive;
+}
+
+#header_color {
+    background-color: #f2f2f0;
+}
+
+#header_color {
+    background-color: #f2f2f0;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.fa-film{
+    font-size: 30px;
 }
