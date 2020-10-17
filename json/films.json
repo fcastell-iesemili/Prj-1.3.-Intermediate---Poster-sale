@@ -1,25 +1,40 @@
 {
-    "films": [
-        {
-            "id": "01",
-            "titulo": "Terminator",
-            "duracion": "2h",
-            "director": "James Cameron",
-            "genero": "Drama"
-        },
-        {
-            "id": "02",
-            "titulo": "Alien",
-            "duracion": "2h 30 min",
-            "director": "Ridley Scott",
-            "genero": "Sci-Fi"
-        },
-        {
-            "id": "03",
-            "titulo": "Matrix",
-            "duracion": "2h 16 min",
-            "director": "James Cameron",
-            "genero": "Action"
-        }
-    ]
+  "films": [
+    {
+      "id": "01",
+      "titulo": "Terminator",
+      "duracion": "2h",
+      "director": "James Cameron",
+      "genero": "Drama",
+      "stars": [
+        "Arnold Schwarzengger(Pep)",
+        "Linda Hamilton(Constantin)",
+        "Michael Biehn(Lorca)"
+      ]
+    },
+    {
+      "id": "02",
+      "titulo": "Alien",
+      "duracion": "2h 30 min",
+      "director": "Ridley Scott",
+      "genero": "Sci-Fi",
+      "stars": [
+        "Tom Skerritt(Dallas)",
+        "Sigourney Weaver(Ripley)",
+        "Veronica Cartwright(Lambert)"
+      ]
+    },
+    {
+      "id": "03",
+      "titulo": "Matrix",
+      "duracion": "2h 16 min",
+      "director": "James Cameron",
+      "genero": "Action",
+      "stars": [
+        "Keanu Reeves(Neo)",
+        "Laurence Fishburne(Morpheus)",
+        "Carrie-Anne Moss(Trinity)"
+      ]
+    }
+  ]
 }

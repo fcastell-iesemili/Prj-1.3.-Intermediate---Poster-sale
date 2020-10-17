@@ -1,28 +1,62 @@
 #body_color {
-    background-color: #f2f2f0;
+  background-color: #f2f2f0;
 }
 
 #section_color {
-    background-color: #e9ecee;
-    padding: 40px;
-    margin-top: 40px;
+  background-color: #e9ecee;
+  padding: 40px;
+  margin-top: 40px;
 }
 
 #title_section {
-    font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
+}
+
+#titles {
+  font-family: "Piedra", cursive;
+  background-color: #f2f2f0;
 }
 
 #header_color {
-    background-color: #f2f2f0;
+  background-color: #f2f2f0;
 }
 
 #header_color {
-    background-color: #f2f2f0;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+  background-color: #f2f2f0;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.fa-film{
-    font-size: 30px;
+.fa-film {
+  font-size: 30px;
+}
+
+#footer-color {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#Pelicula-1 {
+  text-align: center;
+  background-color: #e9ecee;
+  margin-right: 20px;
+}
+
+#Pelicula-2 {
+  text-align: center;
+  background-color: #e9ecee;
+  margin-right: 20px;
+}
+
+#Pelicula-3 {
+  text-align: center;
+  background-color: #e9ecee;
 }
