@@ -1,7 +1,8 @@
 function Search_Button_Terminator() {
     let button = document.getElementById('search_input').value;
+    nombre_peli = "terminator";
 
-    if (button.match("terminator")) {
+    if (button == nombre_peli) {
 
         fetch("json/films.json")
             .then((result) => result.json())
@@ -44,7 +45,9 @@ function Search_Button_Terminator() {
 function Search_Button_Alien() {
     let button = document.getElementById('search_input').value;
 
-    if (button.match("alien")) {
+    nombre_peli = "alien";
+
+    if (button == nombre_peli) {
 
         fetch("json/films.json")
             .then((result) => result.json())
@@ -85,8 +88,9 @@ function Search_Button_Alien() {
 
 function Search_Button_Matrix() {
     let button = document.getElementById('search_input').value;
+    nombre_peli = "matrix";
 
-    if (button.match("matrix")) {
+    if (button == nombre_peli) {
 
         fetch("json/films.json")
             .then((result) => result.json())
