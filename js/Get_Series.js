@@ -23,7 +23,7 @@ function Get_Serie_01() {
             <div class="something"> <p>${data.films['0'].stars['1']}</p> </div>
             <div class="something"> <p>${data.films['0'].stars['2']}</p> </div>
 
-            <button id="button_Terminator_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
+            <button data-toggle="modal" data-target="#exampleModalCenter" id="button_Terminator_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
 
               `
         });
@@ -54,7 +54,7 @@ function Get_Serie_02() {
                 <p>${data.films['1'].stars['1']}</p>
                 <p>${data.films['1'].stars['2']}</p>
 
-                <button id="button_Alien_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
+                <button data-toggle="modal" data-target="#exampleModalCenter" id="button_Alien_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
 
                 `
         });
@@ -85,7 +85,7 @@ function Get_Serie_03() {
                 <p>${data.films['2'].stars['1']}</p>
                 <p>${data.films['2'].stars['2']}</p>
 
-                <button  id="button_Matrix_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
+                <button data-toggle="modal" data-target="#exampleModalCenter" id="button_Matrix_Series" type="button" class="btn btn-info btn-sm">Comprar</button>
               `
         });
 }
