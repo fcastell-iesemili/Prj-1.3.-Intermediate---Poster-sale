@@ -1,42 +1,35 @@
-#body_color {
+/* Importam estil de text */
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+/* Color Principal */
+.second_color {
   background-color: #f2f2f0;
 }
 
+/* Color secundario */
 #section_color {
   background-color: #e9ecee;
   padding: 40px;
   margin-top: 40px;
 }
 
-#title_section {
-  font-family: "Chilanka", cursive;
+/* Estilo de los titulos */
+#styles_titles {
+  font-family: "Syne Mono", monospace;
 }
 
-#titles {
-  font-family: "Piedra", cursive;
-  background-color: #f2f2f0;
-}
-
-#header_color {
-  background-color: #f2f2f0;
-}
-
-#header_color {
-  background-color: #f2f2f0;
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
+/* TAMANY ICONO */
 .fa-film {
   font-size: 30px;
 }
 
-#footer-color {
+/* Diseny Footer */
+#footer {
   margin-left: 200px;
   margin-right: 200px;
 }
 
+/* Diseny button */
 #buttons {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -44,19 +37,11 @@
   margin-right: 200px;
 }
 
-#Pelicula-1 {
+#text-align {
   text-align: center;
-  background-color: #e9ecee;
-  margin-right: 20px;
 }
 
-#Pelicula-2 {
-  text-align: center;
-  background-color: #e9ecee;
-  margin-right: 20px;
-}
-
-#Pelicula-3 {
-  text-align: center;
+#div_stars {
+  font-family: "Syne Mono", monospace;
   background-color: #e9ecee;
 }

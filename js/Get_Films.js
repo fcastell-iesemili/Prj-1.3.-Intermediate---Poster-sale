@@ -1,93 +1,48 @@
-function Get_Film_01() {
-    fetch("json/films.json")
-        .then((result) => result.json())
-        .then((data) => {
-            let content = document.getElementById('Pelicula-1');
-            content.innerHTML = `
-            
-            <img src="${"img/photo-1.jpg"}" width="200px" height="300>
+function Get_Films() {
+    fetch("/data/data.json")
+        .then(result => result.json())
+        .then(data => {
+            let content = document.getElementById("print_films");;
+            for (let film of data.films) {
+                content.innerHTML += `
+                <div id="text-align" class="col-4">
 
-            <div id="titles">
-                <h3>${data.films['0'].titulo}</h3>
-            </div>
-            
-            <p>Duraccion: ${data.films['0'].duracion}</p>
-            <p> Director: ${data.films['0'].director} </p>
-            <p> Genero: ${data.films['0'].genero} </p>
-            
-            <div id="titles"> 
-                <h4> Stars </h4>
-            </div>
+                    <div id="img">
+                        <img src="${film.img}" width="300px" height="450px">
+                    </div>
 
-            <div class="something"> <p>${data.films['0'].stars['0']}</p> </div>
-            <div class="something"> <p>${data.films['0'].stars['1']}</p> </div>
-            <div class="something"> <p>${data.films['0'].stars['2']}</p> </div>
+                    <div id="titulo">
+                        <h3> ${film.titulo} </h3>
+                    </div>
 
-            <button data-toggle="modal" data-target="#comand" type="button" class="btn btn-info btn-sm">Comprar</button>
+                    <div id="duracion">
+                        <p> Duración: ${film.duracion} </p>
+                    </div>
 
-              `
-        });
-}
+                    <div id="director">
+                        <p> Director: ${film.director} </p>
+                    </div>
 
+                    <div id="genero">
+                        <p> Género: ${film.genero} </p>
+                    </div>
 
-function Get_Film_02() {
-    fetch("json/films.json")
-        .then((result) => result.json())
-        .then((data) => {
-            let content = document.getElementById('Pelicula-2');
-            content.innerHTML = `
-            <img src="${"img/photo-2.jpg"}" width="200px" height="300>
+                    <div id="div_stars">
+                        <h4> STARS </h4>
+                    </div>
 
-            <div id="titles">
-                <h3>${data.films['1'].titulo}</h3>
-            </div>
+                    <div id="stars">
+                        <p> ${film.stars[0]} </p>
+                        <p> ${film.stars[1]} </p>
+                        <p> ${film.stars[2]} </p>
+                    </div>
 
-               <p>Duraccion: ${data.films['1'].duracion}</p>
-                <p> Director: ${data.films['1'].director} </p>
-                <p> Genero: ${data.films['1'].genero} </p>
-                
-                <div id="titles"> 
-                    <h4> Stars </h4>
+                    <button id="btn_modal_comprar" data-toggle="modal" data-target="#comand" type="button" class="btn btn-info btn-sm">Comprar</button>
+
                 </div>
-                
-                <p>${data.films['1'].stars['0']}</p>
-                <p>${data.films['1'].stars['1']}</p>
-                <p>${data.films['1'].stars['2']}</p>
-
-                <button data-toggle="modal" data-target="#comand" type="button" class="btn btn-info btn-sm">Comprar</button>
-
                 `
+            }
         });
 }
 
-
-function Get_Film_03() {
-    fetch("json/films.json")
-        .then((result) => result.json())
-        .then((data) => {
-            let content = document.getElementById('Pelicula-3');
-            content.innerHTML = `
-            <img src="${"img/photo-3.jpg"}" width="200px" height="300>
-
-            <div id="titles">
-                <h3>${data.films['2'].titulo}</h3>
-            </div>
-
-               <p>Duraccion: ${data.films['2'].duracion}</p>
-                <p> Director: ${data.films['2'].director} </p>
-                <p> Genero: ${data.films['2'].genero} </p>
-                
-                <div id="titles"> 
-                    <h4> Stars </h4>
-                </div>
-                
-                <p>${data.films['2'].stars['0']}</p>
-                <p>${data.films['2'].stars['1']}</p>
-                <p>${data.films['2'].stars['2']}</p>
-
-                <button data-toggle="modal" data-target="#comand" type="button" class="btn btn-info btn-sm">Comprar</button>
-              `
-        });
-}
-
-export { Get_Film_01, Get_Film_02, Get_Film_03 };
+export { Get_Films };

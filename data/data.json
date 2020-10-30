@@ -10,7 +10,8 @@
         "Arnold Schwarzengger(Pep)",
         "Linda Hamilton(Constantin)",
         "Michael Biehn(Lorca)"
-      ]
+      ],
+      "img": "/img/photo-1.jpg"
     },
     {
       "id": "02",
@@ -22,7 +23,8 @@
         "Tom Skerritt(Dallas)",
         "Sigourney Weaver(Ripley)",
         "Veronica Cartwright(Lambert)"
-      ]
+      ],
+      "img": "/img/photo-2.jpg"
     },
     {
       "id": "03",
@@ -34,7 +36,8 @@
         "Keanu Reeves(Neo)",
         "Laurence Fishburne(Morpheus)",
         "Carrie-Anne Moss(Trinity)"
-      ]
+      ],
+      "img": "/img/photo-3.jpg"
     }
   ]
 }
