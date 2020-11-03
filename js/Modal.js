@@ -1,5 +1,6 @@
 function Print_Modal() {
-    let var_modal = document.getElementById("print_modal");;
+
+    let var_modal = document.getElementById("print_modal");
     var_modal.innerHTML += `
         <div class="modal fade" id="comand" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
@@ -12,22 +13,14 @@ function Print_Modal() {
                 </button>
                 </div>
                 <div class="modal-body">
+                
                 <div id="Poster">
                     <form class="form-inline my-2 my-lg-0">
                     <h5>Póster: </h5>
-                    <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Trien Una
-                        </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Terminator</a>
-                        <a class="dropdown-item" href="#">Alien</a>
-                        <a class="dropdown-item" href="#">Matrix</a>
-                        </div>
-                    </div>
+                    <h5 id="poster_title">  </h5>
                     </form>
                 </div>
+
                 <div id="Cantidad">
                     <form class="form-inline my-2 my-lg-0">
                     <h5>Cantidad: </h5>
@@ -74,3 +67,19 @@ function Print_Modal() {
 }
 
 Print_Modal();
+
+function handdleButtonOrder() {
+    let aBtn = document.querySelectorAll(".btn-buy");
+    if (aBtn) {
+        aBtn.forEach(item => {
+            item.addEventListener("click", function () {
+
+                let idFilm = item.getAttribute("data-card");
+                let tagPostName = document.querySelector("#poster_title");
+
+                let title = document.querySelector("#card-" + idFilm + " h3").innerHTML;
+                tagPostName.innerHTML = title;
+            });
+        });
+    }
+}
